@@ -27,6 +27,11 @@ jobs:
     with:
       ppsspp_version: ${{ inputs.ppsspp_version }}
 
+  build-h700:
+    uses: ./.github/workflows/build-h700.yml
+    with:
+      ppsspp_version: ${{ inputs.ppsspp_version }}
+
   build-pvr:
     uses: ./.github/workflows/build-pvr.yml
     with:
