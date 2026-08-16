@@ -1,0 +1,4 @@
+# H700-specific PPSSPP patches go here (applied after patches/common/).
+# None currently needed: the gameswitcher / menu-button patches live in
+# patches/common/, and unlike MustardOS we do not force-link the mali blob
+# (dynamic soname linking defers GLES/EGL/SDL2 to the device at runtime).
