@@ -44,6 +44,7 @@ jobs:
         run: |
           mkdir -p toolchains/smartpro
           gh release download sdk-toolchains \
+            --repo spruceUI/PPSSPP-spruce \
             -p "aarch64-linux-gnu-7.5.0-linaro.tgz" \
             -p "SDK_usr_tg5040_a133p.tgz" \
             -p "SDL2-2.26.1.GE8300.tgz" \
