@@ -17,7 +17,7 @@ permissions:
   packages: write
 
 env:
-  IMAGE: ghcr.io/spruceui/ppsspp-builder-tsps
+  IMAGE: ghcr.io/${{ github.repository_owner }}/ppsspp-builder-tsps
 
 jobs:
   build:
@@ -44,6 +44,7 @@ jobs:
         run: |
           mkdir -p toolchains/smartpro_s
           gh release download sdk-toolchains \
+            --repo spruceUI/PPSSPP-spruce \
             -p "sdk_tg5050_linux_v1.0.0.tgz" \
             -D toolchains/smartpro_s/
 
